@@ -2,11 +2,11 @@ package model;
 
 import java.util.Date;
 
-public class pelicula extends favorito {
-    public pelicula() {
+public class Movie extends Favourite {
+    public Movie() {
         director="anonimo";
     }
-    public pelicula(String nombre, String genero, Date f_lanzamiento, String director) {
+    public Movie(String nombre, String genero, Date f_lanzamiento, String director) {
         super(nombre, genero, f_lanzamiento);
         this.director = director;
     }
@@ -21,9 +21,9 @@ public class pelicula extends favorito {
     public String toString() {
         return "pelicula{" +
                 "director='" + director + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", genero='" + genero + '\'' +
-                ", f_lanzamiento=" + f_lanzamiento +
+                ", nombre='" + name + '\'' +
+                ", genero='" + genre + '\'' +
+                ", f_lanzamiento=" + launchDate +
                 '}';
     }
 }

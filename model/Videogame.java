@@ -2,18 +2,18 @@ package model;
 
 import java.util.Date;
 
-public class videojuego extends favorito{
-    public videojuego() {
+public class Videogame extends Favourite {
+    private String desarrollador;
+    private boolean mundo_abierto;
+    public Videogame() {
          desarrollador="anonimo";
          mundo_abierto=false;
     }
-    public videojuego(String nombre, String genero, Date f_lanzamiento, String desarrollador, boolean mundo_abierto) {
+    public Videogame(String nombre, String genero, Date f_lanzamiento, String desarrollador, boolean mundo_abierto) {
         super(nombre, genero, f_lanzamiento);
         this.desarrollador = desarrollador;
         this.mundo_abierto = mundo_abierto;
     }
-    private String desarrollador;
-    private boolean mundo_abierto;
     public String getDesarrollador() {
         return desarrollador;
     }
@@ -31,9 +31,9 @@ public class videojuego extends favorito{
         return "videojuego{" +
                 "desarrollador='" + desarrollador + '\'' +
                 ", mundo_abierto=" + mundo_abierto +
-                ", nombre='" + nombre + '\'' +
-                ", genero='" + genero + '\'' +
-                ", f_lanzamiento=" + f_lanzamiento +
+                ", nombre='" + name + '\'' +
+                ", genero='" + genre + '\'' +
+                ", f_lanzamiento=" + launchDate +
                 '}';
     }
 }

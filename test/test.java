@@ -1,27 +1,11 @@
 package test;
 
+import model.Favourite;
+import model.Movie;
+
 public class test {
-    private int  test;
-
-    public test(int test) {
-        this.test = test;
-    }
-    public  test(){
-
-    }
-
-    public int getTest() {
-        return test;
-    }
-
-    public void setTest(int test) {
-        this.test = test;
-    }
-
-    @Override
-    public String toString() {
-        return "test{" +
-                "test=" + test +
-                '}';
+    public static void main(String[] args) {
+        Favourite pelicula= new Movie();
+        System.out.println(pelicula);
     }
 }
