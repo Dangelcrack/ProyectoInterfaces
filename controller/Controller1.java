@@ -6,6 +6,7 @@ public class Controller1 implements Icontroller {
 
     @Override
     public void start() {
+        int opcion;
 
     }
 
