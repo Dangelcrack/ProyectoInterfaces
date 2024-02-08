@@ -1,4 +1,4 @@
-package model.repo;
+package model.Library;
 
 import interfaces.ILibrary;
 import model.entity.favorito;
