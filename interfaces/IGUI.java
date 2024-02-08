@@ -1,6 +1,6 @@
 package interfaces;
 
-import model.favorito;
+import model.entity.favorito;
 
 public interface IGUI {
     void inicio();
