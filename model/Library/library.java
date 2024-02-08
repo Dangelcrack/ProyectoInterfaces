@@ -1,31 +1,31 @@
 package model.Library;
 
 import interfaces.ILibrary;
-import model.entity.favorito;
+import model.entity.favorite;
 
 import java.util.Date;
 
 public class library implements ILibrary {
     private static final int TAM = 25;
-    private favorito[] favoritos;
+    private favorite[] favorites;
 
     public library() {
-        favoritos = new favorito[TAM];
+        favorites = new favorite[TAM];
     }
 
     @Override
-    public favorito[] muestraFavorito() {
-        return favoritos;
+    public favorite[] showFavorite() {
+        return favorites;
     }
 
     @Override
-    public boolean añadirFavorito(favorito b) {
+    public boolean addFavorite(favorite b) {
         boolean result = false;
-        if (getPosFavorito(b) == -1) {
-            for (int i = 0; i < favoritos.length
+        if (getPosFavorite(b) == -1) {
+            for (int i = 0; i < favorites.length
                     && !result; i++) {
-                if (favoritos[i] == null) {
-                    favoritos[i] = b;
+                if (favorites[i] == null) {
+                    favorites[i] = b;
                     result = true;
                 }
             }
@@ -33,10 +33,10 @@ public class library implements ILibrary {
         return result;
     }
 
-    private int getPosFavorito(favorito b) {
+    private int getPosFavorite(favorite b) {
         int result = -1;
-        for (int i = 0; i < favoritos.length; i++) {
-            if (favoritos[i] != null && favoritos[i].equals(b)) {
+        for (int i = 0; i < favorites.length; i++) {
+            if (favorites[i] != null && favorites[i].equals(b)) {
                 result = i;
                 break;
             }
@@ -46,40 +46,40 @@ public class library implements ILibrary {
     }
 
     @Override
-    public favorito quitarFavorito(favorito n) {
-        favorito result = null;
-        int pos = getPosFavorito(n);
+    public favorite removeFavorite(favorite n) {
+        favorite result = null;
+        int pos = getPosFavorite(n);
         if(pos!=-1){
-            result=favoritos[pos];
-            favoritos[pos]=null;
+            result= favorites[pos];
+            favorites[pos]=null;
         }
         return result;
     }
 
     @Override
-    public void findByName(String nombre) {
-        for (favorito favorito : favoritos) {
-            if (favorito.getNombre().equals(nombre)) {
+    public void findByName(String n) {
+        for (favorite favorito : favorites) {
+            if (favorito.getName().equals(n)) {
                 System.out.println("Favorito encontrado: " + favorito);
                 return;
             }
         }
-        System.out.println("No se encontró ningún favorito con el nombre: " + nombre);
+        System.out.println("No se encontró ningún favorite con el nombre: " + n);
     }
 
     @Override
-    public void findByGenero(String genero) {
-        for (favorito favorito : favoritos) {
-            if (favorito.getGenero().equalsIgnoreCase(genero)) {
+    public void findByGender(String g) {
+        for (favorite favorito : favorites) {
+            if (favorito.getGender().equalsIgnoreCase(g)) {
                 System.out.println("Favorito encontrado: " + favorito);
             }
         }
     }
 
     @Override
-    public void findByDate(Date fecha) {
-        for (favorito favorito : favoritos) {
-            if (favorito.getF_lanzamiento().equals(fecha)) {
+    public void findByDate(Date f) {
+        for (favorite favorito : favorites) {
+            if (favorito.getD_departure().equals(f)) {
                 System.out.println("Favorito encontrado:  " + favorito);
             }
         }
