@@ -6,7 +6,7 @@ import model.entity.favorito;
 import java.util.Date;
 
 public class library implements ILibrary {
-    private static final int TAM = 30;
+    private static final int TAM = 25;
     private favorito[] favoritos;
 
     public library() {
