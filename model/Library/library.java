@@ -80,7 +80,7 @@ public class library implements ILibrary {
     public void findByDate(Date fecha) {
         for (favorito favorito : favoritos) {
             if (favorito.getF_lanzamiento().equals(fecha)) {
-                System.out.println("Favorito encontrado: " + favorito);
+                System.out.println("Favorito encontrado:  " + favorito);
             }
         }
     }
