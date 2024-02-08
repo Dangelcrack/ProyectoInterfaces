@@ -6,7 +6,7 @@ import model.entity.favorito;
 import java.util.Date;
 
 public class library implements ILibrary {
-    private static final int TAM = 20;
+    private static final int TAM = 30;
     private favorito[] favoritos;
 
     public library() {
@@ -80,7 +80,7 @@ public class library implements ILibrary {
     public void findByDate(Date fecha) {
         for (favorito favorito : favoritos) {
             if (favorito.getF_lanzamiento().equals(fecha)) {
-                System.out.println("Favorito encontrado: " + favorito);
+                System.out.println("Favorito encontrado:  " + favorito);
             }
         }
     }
