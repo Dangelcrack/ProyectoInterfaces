@@ -3,7 +3,7 @@ package controller;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class leerString {
+public class ReadString {
     //esto es mas lioso solo pro el simpe hecho de que no entiendo para
     //que es que lo quereis utilizar
 

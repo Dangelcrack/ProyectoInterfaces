@@ -1,9 +1,9 @@
 package view;
 
-    public class vista{
+    public class View {
 
 
-        public static void inicio(){
+        public static void start(){
                 /*holaaa soy el narrador... voy a poneros unas cuantas explicaciones
                 por aqui y por aya para que sea mas facil montar la vista
 
@@ -32,7 +32,7 @@ package view;
 
 
         }
-        public static void decoracion1_1(){
+        public static void decorationn1_1(){
 
             //esto es una decoracion, la inencion es hacer como uan especie de marco esta parte seria el encabezado de arriba
             //obiamente este no es necesario en la cinco opciones principales si no por ejemplo a la hora de guardar una pelicula
@@ -41,7 +41,7 @@ package view;
             System.out.println("********************************************************\n" );
 
         }
-        public static void decoracion1_2(){
+        public static void decoration1_2(){
 
             //esta es la continuacion del marco
 
@@ -50,7 +50,7 @@ package view;
                     "********************************************************\n"+
                     "□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□");
         }
-        public static void primera_opcion(){
+        public static void first_option(){
 
             // esta es la primera opcion, e supuesto que abra un metodo para crear cada cosa
 
@@ -69,7 +69,7 @@ package view;
 
         }
 
-        public static void segunda_opcion(){
+        public static void second_option(){
 
             // esta es la segunda opcion, a falta de saber como vamos a  borrar e puesto uno par borrar cada cosa
 
@@ -87,7 +87,7 @@ package view;
                                "□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□");
 
         }
-        public static void tercera_opcion(){
+        public static void third_option(){
 
             // esta es la tercera opcion, aqui supongo que haceis una lista de objetos por cada cosa,
             // si no podeis utilizar la decoracion de antes dierctamente y no mostrar esta pantalla
@@ -106,7 +106,7 @@ package view;
                     "□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□");
 
         }
-        public static void cuarta_opcion(){
+        public static void fourth_option(){
 
             // esta es la cuarta opcion, aqui e puesto varias opciones de busqueda aquellas que no existan cuando este montado
             //se borraran de este
@@ -125,7 +125,7 @@ package view;
                                "□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□");
 
         }
-        public static void quinta_opcion(){
+        public static void fifth_option(){
 
             // esta es la ultima  opcion, la cual es una despedida, como si fueran unos creditos
 

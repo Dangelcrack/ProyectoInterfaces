@@ -3,7 +3,7 @@ package controller;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class leernumero {
+public class ReadNumber {
     //este es un codigo sencillo que podemos utilizar para pedir un numero
     public static int readint(String msg,int x,int valormaximo,int valorminimo){
 
