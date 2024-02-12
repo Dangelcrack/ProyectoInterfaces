@@ -1,7 +1,7 @@
-package Model.Library;
+package src.Model.Library;
 
-import Interfaces.ILibrary;
-import Model.Entity.Favourite;
+import src.Interfaces.ILibrary;
+import src.Model.Entity.Favourite;
 
 import java.util.Date;
 

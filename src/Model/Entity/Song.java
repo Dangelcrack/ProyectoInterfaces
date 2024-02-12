@@ -1,4 +1,4 @@
-package Model.Entity;
+package src.Model.Entity;
 
 import java.util.Date;
 import java.util.Objects;

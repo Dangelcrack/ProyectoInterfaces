@@ -1,9 +1,9 @@
-package Controller;
+package src.Controller;
 
-import Interfaces.IController;
-import Model.Entity.Favourite;
-import Model.Library.Library;
-import View.GUI;
+import src.Interfaces.IController;
+import src.Model.Entity.Favourite;
+import src.Model.Library.Library;
+import src.View.GUI;
 
 public class Controller implements IController {
 

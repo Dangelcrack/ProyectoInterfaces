@@ -1,6 +1,6 @@
-package Test;
+package src.Test;
 
-import Controller.Controller;
+import src.Controller.Controller;
 
 public class Test {
     public static void main(String[] args) {

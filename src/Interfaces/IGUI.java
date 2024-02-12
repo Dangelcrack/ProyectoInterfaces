@@ -1,6 +1,6 @@
-package Interfaces;
+package src.Interfaces;
 
-import Model.Entity.Favourite;
+import src.Model.Entity.Favourite;
 
 public interface IGUI {
     void showMainMenu();

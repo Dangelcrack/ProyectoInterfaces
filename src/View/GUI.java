@@ -1,7 +1,7 @@
-package View;
+package src.View;
 
-import Interfaces.IGUI;
-import Model.Entity.Favourite;
+import src.Interfaces.IGUI;
+import src.Model.Entity.Favourite;
 
 import java.util.Scanner;
 
